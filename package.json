@@ -1,10 +1,22 @@
 {
-  "name": "accManagerApp",
+  "name": "accmanagerapp",
   "version": "1.0.0",
   "description": "Bank accounts manager ",
   "main": "index.js",
   "repository": "https://github.com/siawfish/bankAccountsManagerAppApi.git",
   "author": "Siawfish",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "start": "nodemon"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.28"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
+
+
