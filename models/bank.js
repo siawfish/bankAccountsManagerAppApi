@@ -22,7 +22,7 @@ var banksSchema = new schema({
     accounts: [
         {
             accountId: {
-                type:mongoose.Schema.Types.ObjectId,
+                type:schema.Types.ObjectId,
                 ref:'Accounts',
                 required:true
             }

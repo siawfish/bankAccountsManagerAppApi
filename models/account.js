@@ -16,8 +16,8 @@ var accountsSchema = new schema({
         required: true
     },
     bankId:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:'Bank',
+        type:schema.Types.ObjectId,
+        ref:'Banks',
         required:true
     }
 })

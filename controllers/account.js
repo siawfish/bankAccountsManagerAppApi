@@ -26,7 +26,9 @@ const createAccountsController = (req, res) => {
 const fetchAccountsController = (req, res) => {
     const { id } = req.params
     !id ? 
-    accountsModel.find().then((banks)=>{
+    accountsModel.find()
+    .populate("bankId")
+    .then((banks)=>{
         res.json({banks})
     }).catch((err)=>console.log(err)) :
     accountsModel.findById(id).then((banks)=>{

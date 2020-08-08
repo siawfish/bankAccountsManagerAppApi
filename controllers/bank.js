@@ -38,7 +38,7 @@ const updateBanksController = (req, res) => {
 
 const createBanksController = (req, res) => {
     const {id, bankName, bankBranch, bankAccNo, bankLocation} = req.body
-    const bank = new booksModel({id, bankName, bankBranch, bankAccNo, bankLocation})
+    const bank = new banksModel({id, bankName, bankBranch, bankAccNo, bankLocation})
     bank.save()
     .then((bank)=>{
         res.json({ message:'Created Successfully', bank })
