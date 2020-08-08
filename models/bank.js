@@ -18,7 +18,16 @@ var banksSchema = new schema({
     bankLocation:{
         type:String,
         required:true
-    }
+    },
+    accounts: [
+        {
+            accountId: {
+                type:mongoose.Schema.Types.ObjectId,
+                ref:'Accounts',
+                required:true
+            }
+        }
+    ]
 })
 
 var banksModel = mongoose.model('Banks', banksSchema)

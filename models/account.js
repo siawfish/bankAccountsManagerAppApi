@@ -16,11 +16,12 @@ var accountsSchema = new schema({
         required: true
     },
     bankId:{
-        type:String,
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'Bank',
         required:true
     }
 })
 
-var accountsModel = mongoose.model('Banks', accountsSchema)
+var accountsModel = mongoose.model('Accounts', accountsSchema)
 
 module.exports = accountsModel
