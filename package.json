@@ -1,0 +1,10 @@
+{
+  "name": "accManagerApp",
+  "version": "1.0.0",
+  "description": "Bank accounts manager ",
+  "main": "index.js",
+  "repository": "https://github.com/siawfish/bankAccountsManagerAppApi.git",
+  "author": "Siawfish",
+  "license": "MIT",
+  "private": true
+}
